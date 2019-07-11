@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="content-header">
+    <div class="form-row">
+      <div class="col-3"></div>
+      <div class="col-6 text-center text-white">
+        <h2>HOTELES</h2>
+      </div>
+      <div style="text-align: left" class="col-3 buscador" style="min-width:230px">
+        <input name="buscador" class="form-control  w-100" type="search" placeholder="Busqueda por nombre"
+          (keyup)="listarHotelesFiltrados($event.target.value);" />
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck d-flex" style="align-items:center">
+  <app-tarjeta-hotel *ngFor="let hotel of hoteles " [hotel]="hotel" style="margin:5px"></app-tarjeta-hotel>
+</div>

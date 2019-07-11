@@ -1,0 +1,29 @@
+<div class="tarjeta">
+
+  <div class="card-header bg-light" style="text-align: center">
+    <span name="nombre">
+      <h5>{{ hotel.name }}</h5>
+    </span>
+  </div>
+  <br>
+  <img name="logo" class="tamañoImagen" [src]="'/assets/' + hotel.image" *ngIf="hotel.image" />
+
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="font-weight-bold">Estrellas: </span>
+        <span class="float-right"> {{ hotel.stars }} </span>
+      </li>
+      <li class="list-group-item">
+        <span class="font-weight-bold"> Precio:</span>
+        <span class="float-right"> {{ hotel.price | currency }}</span>
+      </li>
+      <li class="list-group-item">
+        <span class="font-weight-bold"> Servicios:</span>
+      </li>
+    </ul>
+    <br>
+    <span class="badge badge-pill badge-light" style="padding-left:10px" *ngFor="let amenitie of hotel.amenities">{{ amenitie }}</span>
+
+  </div>
+</div>

@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/bootstrap";
+// @import "theme/app-red";
+
+
+.header{
+    background:  #943E49;
+    min-width: 450px;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Trebuchet, Arial, sans-serif; 
+}
+
+.content-header{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: 400;
+
+
+    
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.12);
+    justify-content: flex-start;
+    padding: 2em;
+    border-radius: 13px;
+    background: white;
+    width: 360px;
+    height: 540px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all .2s;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    img{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .card{
+
+        &-body{
+            text-align: left;
+        }
+
+    }
+    &:hover{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.36);
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.buscador{
+    padding-right: 2px;
+}
